@@ -46,4 +46,11 @@ jobs:
           role-to-assume: arn:aws:iam::737039508488:role/gitHubActionsIAMroleDev
           role-session-name: GitHubActionsRoleSession
           aws-region: ${{ env.AWS_REGION }}
-        run: aws sts get-caller-identity
+      - name: Run aws sts get-caller-identity
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+          sleep 5
+          tree .
+          ls
+          aws sts get-caller-identity
