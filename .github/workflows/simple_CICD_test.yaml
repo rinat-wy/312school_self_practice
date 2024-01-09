@@ -6,6 +6,8 @@ name: Test CI
 on:
   push:
     branches: ["feature/rinat"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
   build:
