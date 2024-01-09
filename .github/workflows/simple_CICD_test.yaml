@@ -45,4 +45,4 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::737039508488:role/gitHubActionsIAMroleDev
           role-session-name: GitHubActionsRoleSession
-          aws-region: "$AWS_REGION"
+          aws-region: ${{ env.AWS_REGION }}
